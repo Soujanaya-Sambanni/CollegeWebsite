@@ -1,19 +1,34 @@
 {
-  "posts": [
+  "staff": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Santosh",
+      "dob": "1985-11-15",
+      "mnumber": 7654345435,
+      "email": "s@gmail.com",
+      "desig": "Professor",
+      "subject": "DSA",
+      "address": "ss road"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "name": "Rutu",
+      "dob": "1995-09-21",
+      "mnumber": 7678736847,
+      "email": "rutu@gmail.com",
+      "desig": "Asst. Professor",
+      "subject": "DBMS",
+      "address": "Kalyan Nagar"
+    },
+    {
+      "id": 3,
+      "name": "Dhruthi ",
+      "dob": "1992-10-21",
+      "mnumber": 9878754346,
+      "email": "drai@gmail.com",
+      "desig": "Asst.Professor",
+      "subject": "IOT",
+      "address": "New Court Road"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
