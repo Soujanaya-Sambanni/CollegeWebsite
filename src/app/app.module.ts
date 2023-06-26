@@ -15,6 +15,9 @@ import { SupdateComponent } from './supdate/supdate.component';
 import { FeesComponent } from './fees/fees.component';
 import { FupdateComponent } from './fupdate/fupdate.component';
 
+import { AdmissionComponent } from './admission/admission.component';
+import { AupdateComponent } from './aupdate/aupdate.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +30,9 @@ import { FupdateComponent } from './fupdate/fupdate.component';
     SupdateComponent,
     StudentinfoComponent,
     FeesComponent,
-    FupdateComponent 
+    FupdateComponent ,
+    AdmissionComponent,
+    AupdateComponent
     
 
   ],

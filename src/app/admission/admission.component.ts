@@ -1,7 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { datamodel } from './datamodel';
 import { FormBuilder,FormControl,FormGroup,Validators } from '@angular/forms';
-import { ApiService } from '../api.service';
+import { AapiService } from '../aapi.service';
 
 @Component({
   selector: 'app-admission',
@@ -12,7 +12,7 @@ export class AdmissionComponent implements OnInit{
   admissionform!: FormGroup;
   searchText: any;
   data: undefined | datamodel[];
-  constructor(private formbuilder: FormBuilder, private api:ApiService) { }
+  constructor(private formbuilder: FormBuilder, private api:AapiService) { }
   ngOnInit(): void {
     this.admissionform = this.formbuilder.group({
       id: ['', Validators.required],
@@ -32,9 +32,10 @@ addstudent(data: datamodel) {
   console.log(data)
   this.api.addstudent(data).subscribe((res => {
     this.admissionform.reset();
+    this.getstudent();
   }
   ))
-  this.getstudent();
+
 }
 getstudent() {
   this.api.getstudent().subscribe((res => {

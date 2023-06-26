@@ -31,7 +31,7 @@
       "address": "New Court Road"
     }
   ],
-  "stud":[
+  "stud": [
     {
       "id": 1,
       "name": "Swati Limbitot",
@@ -76,7 +76,8 @@
       "pnumber": 8996544345,
       "usn": "2bl19ec085"
     }
-  ],"fees": [
+  ],
+  "fees": [
     {
       "id": "1",
       "sname": "Sangeeta Gaddi",
@@ -106,6 +107,32 @@
       "tfees": "80000",
       "paidfees": "60000",
       "duefees": "20000"
+    }
+  ],
+  "admission": [
+    {
+      "id": 1,
+      "name": "Swati l",
+      "dob": "2023-06-07",
+      "gen": "Female",
+      "sper": "92%",
+      "pper": "82%",
+      "cname": "CSE",
+      "no": 8529631236,
+      "email": "s@gmail.com",
+      "date": "2023-06-30"
+    },
+    {
+      "id": 2,
+      "name": "Sangeeta P",
+      "dob": "2023-06-03",
+      "gen": "Female",
+      "sper": "85%",
+      "pper": "79%",
+      "cname": "CSE",
+      "no": 2589631245,
+      "email": "sangwwt@gmail.com",
+      "date": "2023-07-06"
     }
   ]
 }
