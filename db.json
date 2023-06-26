@@ -76,5 +76,36 @@
       "pnumber": 8996544345,
       "usn": "2bl19ec085"
     }
+  ],"fees": [
+    {
+      "id": "1",
+      "sname": "Sangeeta Gaddi",
+      "usn": "CS080",
+      "cno": "9898767654",
+      "email": "gaddi@gmail.com",
+      "tfees": "80000",
+      "paidfees": "50000",
+      "duefees": "30000"
+    },
+    {
+      "id": "2",
+      "sname": "Nishita Revadi",
+      "usn": "CS098",
+      "cno": "8787676565",
+      "email": "revadi@gmail.com",
+      "tfees": "80000",
+      "paidfees": "40000",
+      "duefees": "40000"
+    },
+    {
+      "id": "3",
+      "sname": "Ravi Joshi",
+      "usn": "CS078",
+      "cno": "7876565434",
+      "email": "joshi@gmail.com",
+      "tfees": "80000",
+      "paidfees": "60000",
+      "duefees": "20000"
+    }
   ]
 }

@@ -7,6 +7,8 @@ import { StaffInfoComponent } from './staff-info/staff-info.component';
 import { UpdateComponent } from './update/update.component';
 import { StudentinfoComponent } from './studentinfo/studentinfo.component';
 import { SupdateComponent } from './supdate/supdate.component';
+import { FeesComponent } from './fees/fees.component';
+import { FupdateComponent } from './fupdate/fupdate.component';
 
 const routes: Routes = [
   {path:'home',component:HomeComponent},
@@ -15,7 +17,9 @@ const routes: Routes = [
   {path:'staffInfo',component:StaffInfoComponent},
   {path:'update/:id',component:UpdateComponent},
   {path:'studentinfo',component:StudentinfoComponent},
-  {path:'supdate/:id',component:SupdateComponent}
+  {path:'supdate/:id',component:SupdateComponent},
+  {path:'fees',component:FeesComponent},
+  {path:'fupdate/:id',component:FupdateComponent}
 ];
 
 @NgModule({

@@ -12,6 +12,9 @@ import { StaffInfoComponent } from './staff-info/staff-info.component';
 import { UpdateComponent } from './update/update.component';
 import { StudentinfoComponent } from './studentinfo/studentinfo.component';
 import { SupdateComponent } from './supdate/supdate.component';
+import { FeesComponent } from './fees/fees.component';
+import { FupdateComponent } from './fupdate/fupdate.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +24,10 @@ import { SupdateComponent } from './supdate/supdate.component';
     StaffInfoComponent,
     UpdateComponent,
     StaffInfoComponent,
-    SupdateComponent,StudentinfoComponent
+    SupdateComponent,
+    StudentinfoComponent,
+    FeesComponent,
+    FupdateComponent 
     
 
   ],
