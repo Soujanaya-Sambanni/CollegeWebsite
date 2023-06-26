@@ -1,0 +1,146 @@
+<br>
+<div class="d-flex">
+
+    <button class="btn btn-success" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-file-earmark-plus-fill"> ADD STUDENT</i></button>&nbsp;&nbsp;
+    <div class="search-student" >
+        <input type="search" class="form-control input-lg" name="searchstudent" placeholder="search student"
+          (input)="searchstudent($event)">
+      </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div style="background-color: black;" class="modal-header">
+          <h5 style="color: white;" class="modal-title" id="exampleModalLabel">STUDENT ADMISSION FORM</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body nb-2">
+          <form [formGroup]="admissionform">
+            <div class="form-group"  >
+              <label for="example">Student Name</label>
+              <input type="text" class="form-control" formControlName="name" placeholder="Enter  student name">
+              <span class="text-danger" *ngIf="admissionform.controls['name'].dirty && admissionform.hasError('required','name')">*student name is required</span>
+            </div>
+            <div class="row ">
+            <div class="col">
+              <div class="form-group">
+                <label for="example">DOB</label>
+                <input type="date" class="form-control" formControlName="dob" placeholder="Enter DOB" >
+                <span class="text-danger" *ngIf="admissionform.controls['dob'].dirty && admissionform.hasError('required','dob')">*DOB is required</span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="example">Gender</label>
+                <br>
+                <input type="radio" class="form-control" formControlName="gen" placeholder="Gender" value="Female" class="form-check-input" id="flexRadioDefault2"> Female
+                <input type="radio" class="form-control" formControlName="gen" placeholder="Gender" value="male" class="form-check-input" id="flexRadioDefault2"> Male
+                <span class="text-danger" *ngIf="admissionform.controls['gen'].dirty && admissionform.hasError('required','gen')">*</span>
+            </div>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col">
+            <div class="form-group">
+                <label for="example">SSLC Percentage</label>
+                <input type="text" class="form-control" formControlName="sper" placeholder="SSLC Percentage">
+                <span class="text-danger" *ngIf="admissionform.controls['sper'].dirty && admissionform.hasError('required','sper')">*SSLC Percentage is required</span>
+            </div>
+              </div>
+              <div class="col">
+            <div class="form-group">
+                <label for="example">PUC Percentage</label>
+                <input type="text" class="form-control" formControlName="pper" placeholder="PUC Percentage">
+                <span class="text-danger" *ngIf="admissionform.controls['pper'].dirty && admissionform.hasError('required','pper')">*PUC Percentage is required</span>
+            </div>
+          </div>
+            </div>
+            <div class="row">
+              <div class="col">
+            <div class="form-group">
+                <label for="example"> Course Name </label><br>
+                <select id="country" name="cname" class="form-control" formControlName="cname">
+                    <option >CSE</option>
+                    <option >ECE</option>
+                    <option >EEE</option>
+                    <option >ME</option>
+                    <option >CIVIL</option> 
+                    <option >AI</option>
+                   </select>
+                <span class="text-danger" *ngIf="admissionform.controls['cname'].dirty && admissionform.hasError('required','cname')">*course name is required</span>
+            </div>
+            </div>
+            <div class="col">
+            <div class="form-group">
+                <label for="example">Contact Number </label>
+                <input type="number" class="form-control" formControlName="no" placeholder="Enter Contact Number ">
+                <span class="text-danger" *ngIf="admissionform.controls['no'].dirty && admissionform.hasError('required','no')">*Contact Number is required</span>
+            </div>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col">
+            <div class="form-group">
+                <label for="example">Email </label>
+                <input type="email" class="form-control" formControlName="email" placeholder="Enter email ">
+                <span class="text-danger" *ngIf="admissionform.controls['email'].dirty && admissionform.hasError('required','email')">*email is required</span>
+            </div>
+            </div>
+            <div class="col">
+            <div class="form-group">
+                <label for="example">Date</label>
+                <input type="date" class="form-control" formControlName="date" placeholder="Enter date ">
+                <span class="text-danger" *ngIf="admissionform.controls['date'].dirty && admissionform.hasError('required','date')">*date is required</span>
+            </div>
+            </div>
+            </div>
+          </form>
+        </div>
+        <div style="background-color: black;" class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+          <button (click)="addstudent(this.admissionform.value)" type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mt-3">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          
+          <th scope="col">Student Name</th>
+          <th scope="col">DOB</th>
+          <th scope="col">Gender</th>
+          <th scope="col">SSLC Percentage</th>
+          <th scope="col">PUC Percentage</th>
+          <th scope="col">Course Name</th>
+          <th scope="col">Contact Number</th>
+          <th scope="col">Email</th>
+          <th scope="col">Date of Admission</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of data |filter:searchText">
+           
+          <td>{{item.name}}</td>
+          <td>{{item.dob}}</td>
+          <td>{{item.gen}}</td>
+          <td>{{item.sper}}</td>
+          <td>{{item.pper}}</td>
+          <td>{{item.cname}}</td>
+          <td>{{item.no}}</td>
+          <td>{{item.email}}</td>
+          <td>{{item.date}}</td>
+          <td><button routerLink="/aupdate/{{item.id}}" class="btn btn-warning"><i class="bi bi-pencil"></i></button>&nbsp;
+            <button class="btn btn-danger" (click)="deletestudent(item.id)"><i class="bi bi-archive"></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
