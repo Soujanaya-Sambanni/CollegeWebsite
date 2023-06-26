@@ -1,0 +1,66 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card shadow"  >
+                <h2 style="color:#2f3131; text-align: center;">Update</h2>
+                <div class="row">
+                    <form class="row g-3" >
+                        <div class="form-group mb-2 col-md-6" >
+                            <label for="exampleInputEmail1">ID</label>
+                            <input type="number" class="form-control" [(ngModel)]="student.id" name="id"
+                                placeholder="Enter ID">
+                        </div>
+
+                        <div class="form-group mb-2 col-md-6">
+                            <label for="exampleInputEmail1">Student Name</label>
+                            <input type="text" class="form-control" [(ngModel)]="student.name"  name="name" placeholder="Enter Student Name">
+                            
+                        </div>
+
+                        <div class="form-group mb-2 col-md-6" >
+                            <label for="exampleInputEmail1">USN</label>
+                            <input type="string" class="form-control" [(ngModel)]="student.usn" name="usn" placeholder="Enter USN">
+                        </div>
+              
+                        <div class="form-group mb-2 col-md-6">
+                          <label for="exampleInputEmail1">DOB</label>
+                          <input type="date" class="form-control" [(ngModel)]="student.dob" name="dob"  placeholder="Enter DOB">
+                     
+                        </div>
+
+                        <div class="form-group mb-2 col-md-6">
+                            <label for="exampleInputEmail1">Course</label>
+                            <input type="email"  class="form-control"  [(ngModel)]="student.course" name="course" placeholder="Enter Course"> 
+                          </div>
+        
+                        <div class="form-group mb-2 col-md-6">
+                            <label for="exampleInputEmail1">Father Name</label>
+                            <input type="text" class="form-control" [(ngModel)]="student.fname" name="fname" placeholder="Enter Father Name"> 
+                          </div>
+
+                          <div class="form-group mb-2 col-md-6">
+                            <label for="exampleInputEmail1">Mather Name</label>
+                            <input type="text" class="form-control" [(ngModel)]="student.mname" name="mname" placeholder="Enter Mother Name"> 
+                          </div>
+              
+                        <div class="form-group mb-2 col-md-6">
+                          <label for="exampleInputEmail1">Student Contact No </label>
+                          <input type="number" class="form-control" [(ngModel)]="student.snumber" name="snumber" placeholder="Enter Student Contact No"> 
+                        </div>
+
+                        <div class="form-group mb-2 col-md-6">
+                            <label for="exampleInputEmail1">Parents Contact No </label>
+                            <input type="number" class="form-control" [(ngModel)]="student.pnumber" name="pnumber" placeholder="Enter Parents Contact No"> 
+                          </div>
+                
+              
+                 </form>
+                </div>
+                <div>
+                    <button (click)="supdate()" class="btn btn-outline-success me-2"><i class="bi bi-clipboard-check-fill"></i></button>
+                    <button routerLink="/studentinfo" class="btn btn-outline-danger"><i class="bi bi-arrow-left"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
