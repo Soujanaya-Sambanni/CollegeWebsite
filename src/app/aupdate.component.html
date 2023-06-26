@@ -1,0 +1,68 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card shadow"  >
+                <h2 style="color:black; text-align: center;">Update Data</h2>
+                <div class="row">
+                    <form class="row g-3" >
+                        <div class="form-group mb-2 col-md-6">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input type="text" class="form-control" [(ngModel)]="staff.name"  name="name" placeholder="Enter Name">
+                        </div>
+                        <div class="form-group mb-2 col-md-6" >
+                          <label for="exampleInputEmail1">DOB</label>
+                          <input type="date" class="form-control" [(ngModel)]="staff.date" name="date"
+                              placeholder="Enter DOB">
+                      </div>
+                      <div class="form-group  mb-2 col-md-6" >
+                        <label for="exampleInputEmail1">Gender</label>
+                        <br>
+                        <input type="radio" class="form-control" formControlName="gen" placeholder="Gender" value="Female"  [(ngModel)]="staff.gen" name="gen"class="form-check-input" id="flexRadioDefault2"> Female
+                        <input type="radio" class="form-control" formControlName="gen" placeholder="Gender" value="male"  [(ngModel)]="staff.gen"class="form-check-input"  name="gen"id="flexRadioDefault2"> Male 
+                    </div>
+                    <div class="form-group mb-2 col-md-6" >
+                      <label for="exampleInputEmail1">SSLC Percentage</label>
+                      <input type="text" class="form-control" [(ngModel)]="staff.sper" name="sper"
+                          placeholder="Enter Percentage">
+                  </div>
+                  <div class="form-group mb-2 col-md-6" >
+                    <label for="exampleInputEmail1">PUC Percentage</label>
+                    <input type="text" class="form-control" [(ngModel)]="staff.pper" name="pper"
+                        placeholder="Enter Percentage">
+                </div>
+                    <div class="form-group mb-2 col-md-6">
+                      <label for="exampleInputEmail1">Course Name</label>
+                      <select id="inputState" class="form-select" [(ngModel)]="staff.cname" name="cname">
+                    <option >CSE</option>
+                    <option >ECE</option>
+                    <option >EEE</option>
+                    <option >ME</option>
+                    <option >CIVIL</option> 
+                    <option >AI</option>
+                      </select> 
+                    </div>
+                    <div class="form-group mb-2 col-md-6" >
+                      <label for="exampleInputEmail1">Contact No</label>
+                      <input type="number" class="form-control" [(ngModel)]="staff.no" name="no"
+                          placeholder="Enter Contact no">
+                  </div>
+                  <div class="form-group mb-2 col-md-6" >
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" [(ngModel)]="staff.email" name="email"
+                        placeholder="Enter email">
+                </div>
+                <div class="form-group mb-2 col-md-6" >
+                  <label for="exampleInputEmail1">Date Of Admission</label>
+                  <input type="date" class="form-control" [(ngModel)]="staff.date" name="date"
+                      placeholder="Enter Date">
+                </div>
+                    </form>
+                </div>
+                <div>
+                    <button (click)="aupdate()" class="btn btn-outline-success me-2"><i class="bi bi-clipboard-check-fill"></i></button>
+                    <button routerLink="/admission" class="btn btn-outline-danger"><i class="bi bi-arrow-left"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
