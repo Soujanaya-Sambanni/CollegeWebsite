@@ -1,0 +1,61 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <h5>Update data</h5>
+                <div class="row">
+                    <form>
+
+                        <div class="form-group mb-2">
+                            <label for="exampleInputEmail1">Enter Enter StudentName</label>
+                            <input type="text" class="form-control" [(ngModel)]="fees.sname" name="sname"
+                                placeholder="Enter Student Name">
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <label for="exampleInputEmail1">Enter Enter USN</label>
+                            <input type="text" class="form-control" [(ngModel)]="fees.usn" name="usn"
+                                placeholder="Enter USN ">
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <label for="exampleInputEmail1">Enter ContactNo</label>
+                            <input type="number" class="form-control" [(ngModel)]="fees.cno" name="cno"
+                                placeholder="Enter ContactNo">
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <label for="exampleInputEmail1">Enter Email</label>
+                            <input type="text" class="form-control" [(ngModel)]="fees.email" name="email"
+                                placeholder="Enter Email">
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <label for="exampleInputEmail1">Enter Totalfees</label>
+                            <input type="text" class="form-control" [(ngModel)]="fees.tfees" name="tfees"
+                                placeholder="Enter Totalfees">
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <label for="exampleInputEmail1">Enter Paidfees</label>
+                            <input type="text" class="form-control" [(ngModel)]="fees.paidfees" name="paidfees"
+                                placeholder="Enter Paidfees">
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <label for="exampleInputEmail1">Enter Duefees</label>
+                            <input type="text" class="form-control" [(ngModel)]="fees.duefees" name="duefees"
+                                placeholder="Enter Duefees">
+                        </div>
+
+                        
+                    </form>
+                </div>
+                <div>
+                    <button  (click)="fupdate()" class="btn btn-success me-3">Update</button>
+                    <button routerLink="/fees" class="btn btn-dark">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

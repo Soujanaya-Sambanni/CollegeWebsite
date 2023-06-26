@@ -1,0 +1,123 @@
+<nav class="navbar bg-white">
+    <div class="d-flex">
+      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Fees Details <i class="bi bi-person-add"></i></button><br>
+      </div>
+    </nav> 
+    
+    <div class="search">
+      <input type="search" class="form-control" name="searchfees" placeholder="Search by USN"
+        (input)="searchfees($event)">
+    </div><br>
+ 
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div style="background-color:rgb(8, 8, 8)" class="modal-header">
+          <h5 style="color:white" class="modal-title" id="exampleModalLabel">ADD FEES DETAILS <i class="bi bi-person-add"></i></h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="fform">
+            <div class="form-group mb-2">
+              <label for="exampleInputEmail1">Student ID</label>
+              <input type="text" class="form-control" formControlName="id" placeholder="Enter ID">
+              <span class="text-danger" *ngIf="fform.controls['id'].dirty && fform.hasError('required','id')">*ID is required</span>
+            </div>
+  
+            <div class="form-group mb-2">
+              <label for="exampleInputEmail1">Enter StudentName</label>
+              <input type="name" class="form-control" formControlName="sname" placeholder="Enter Studentname">
+              <span class="text-danger"
+                *ngIf="fform.controls['sname'].dirty && fform.hasError('required','sname')">* StudentName is
+                required</span>
+            </div>
+
+            <div class="form-group mb-2">
+                <label for="exampleInputEmail1">Enter USN</label>
+                <input type="name" class="form-control" formControlName="usn" placeholder="Enter USN">
+                <span class="text-danger"
+                  *ngIf="fform.controls['usn'].dirty && fform.hasError('required','usn')">* USN is
+                  required</span>
+              </div>
+  
+            <div class="form-group mb-2">
+              <label for="exampleInputEmail1">Enter Contactnumber</label>
+              <input type="text" class="form-control" formControlName="cno" placeholder="Enter cno">
+              <span class="text-danger"
+                *ngIf="fform.controls['cno'].dirty && fform.hasError('required','cno')">*Contactno is
+                required</span>
+            </div>
+
+            <div class="form-group mb-2">
+                <label for="exampleInputEmail1">Enter Email</label>
+                <input type="text" class="form-control" formControlName="email" placeholder="Enter email">
+                <span class="text-danger" *ngIf="fform.controls['email'].dirty && fform.hasError('required','email')">*Email is required</span>
+              </div>   
+  
+            <div class="form-group mb-2">
+              <label for="exampleInputEmail1">Enter TotalFees</label>
+              <input type="text" class="form-control" formControlName="tfees" placeholder="Enter totalfees">
+              <span class="text-danger"
+                *ngIf="fform.controls['tfees'].dirty && fform.hasError('required','tfees')">*TotalFees is
+                required</span>
+            </div>
+
+            <div class="form-group mb-2">
+                <label for="exampleInputEmail1">Enter FeesPaid</label>
+                <input type="text" class="form-control" formControlName="paidfees" placeholder="Enter paidfees">
+                <span class="text-danger" *ngIf="fform.controls['paidfees'].dirty && fform.hasError('required','paidfees')">*Paidfees is required</span>
+              </div>
+
+              <div class="form-group mb-2">
+                <label for="exampleInputEmail1">Enter Duefees</label>
+                <input type="text" class="form-control" formControlName="duefees" placeholder="Enter duefees">
+                <span class="text-danger" *ngIf="fform.controls['duefees'].dirty && fform.hasError('required','duefees')">*Duefees is required</span>
+              </div>    
+          </form>
+        </div>
+        <div style="background-color:rgb(10, 10, 10)" class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+          <button (click)="addfees(this.fform.value)"  type="button"
+            class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <div class="container-fluid" mt-3>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">StudentName</th>
+          <th scope="col">USN</th>
+          <th scope="col">ContactNo</th>
+          <th scope="col">Email</th>
+          <th scope="col">TotalFees</th>
+          <th scope="col">PaidFees</th>
+          <th scope="col">DueFees</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of fdata ">
+          <td>{{item.id}}</td>
+          <td>{{item.sname}}</td>
+          <td>{{item.usn}}</td>
+          <td>{{item.cno}}</td>
+          <td>{{item.email}}</td>
+          <td>{{item.tfees}}</td>
+          <td>{{item.paidfees}}</td>
+          <td>{{item.duefees}}</td>
+          <td><button routerLink="/fupdate/{{item.id}}" class="btn btn-dark">Edit <i class="bi bi-pencil-square"></i></button>&nbsp;
+            <button class="btn btn-danger" (click)="deletefees(item.id)">Delete <i class="bi bi-trash"></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
