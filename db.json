@@ -30,5 +30,51 @@
       "subject": "IOT",
       "address": "New Court Road"
     }
+  ],
+  "stud":[
+    {
+      "id": 1,
+      "name": "Swati Limbitot",
+      "dob": "2001-03-15",
+      "course": "CSE",
+      "fname": "Suryakanth",
+      "mname": "Ambika",
+      "snumber": 8443523456,
+      "pnumber": 90006555743,
+      "usn": "2bl19cs101"
+    },
+    {
+      "id": 2,
+      "name": "Sangeeta Gaddi",
+      "dob": "2001-04-12",
+      "course": "CSE",
+      "fname": "Sanganna",
+      "mname": "Renuka",
+      "snumber": 9687665434,
+      "pnumber": 98884534534,
+      "usn": "2bl19cs080"
+    },
+    {
+      "id": 3,
+      "name": "Varshita Kudagi",
+      "dob": "2001-01-26",
+      "course": "EEE",
+      "fname": "XYZ",
+      "mname": "Shilpa",
+      "snumber": 9986756453,
+      "pnumber": 9887656454,
+      "usn": "2bl19ee098"
+    },
+    {
+      "id": 4,
+      "name": "Sujata Kagale",
+      "dob": "2001-06-01",
+      "course": "ECE",
+      "fname": "pqr",
+      "mname": "abc",
+      "snumber": 9888675645,
+      "pnumber": 8996544345,
+      "usn": "2bl19ec085"
+    }
   ]
 }

@@ -10,7 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StaffInfoComponent } from './staff-info/staff-info.component';
 import { UpdateComponent } from './update/update.component';
-
+import { StudentinfoComponent } from './studentinfo/studentinfo.component';
+import { SupdateComponent } from './supdate/supdate.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,11 @@ import { UpdateComponent } from './update/update.component';
     FooterComponent,
     HomeComponent,
     StaffInfoComponent,
-    UpdateComponent
+    UpdateComponent,
+    StaffInfoComponent,
+    SupdateComponent,StudentinfoComponent
+    
+
   ],
   imports: [
     BrowserModule,
