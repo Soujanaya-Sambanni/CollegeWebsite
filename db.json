@@ -107,6 +107,26 @@
       "tfees": "80000",
       "paidfees": "60000",
       "duefees": "20000"
+    },
+    {
+      "id": "4",
+      "sname": "Nisarga Jadav",
+      "usn": "IS077",
+      "cno": "7876765454",
+      "email": "jadav@gmail.com",
+      "tfees": "80000",
+      "paidfees": "45000",
+      "duefees": "35000"
+    },
+    {
+      "id": "5",
+      "sname": "Swati Limbitot",
+      "usn": "CS101",
+      "cno": "8990675453",
+      "email": "swati@gmail.com",
+      "tfees": "80000",
+      "paidfees": "80000",
+      "duefees": "0"
     }
   ],
   "admission": [
@@ -145,6 +165,18 @@
       "no": 8967454454,
       "email": "s@gmail.com",
       "date": "2019-06-12"
+    },
+    {
+      "id": 4,
+      "name": "Nishita",
+      "dob": "2023-06-09",
+      "gen": "Female",
+      "sper": "90%",
+      "pper": "85%",
+      "cname": "ECE",
+      "no": 9898767654,
+      "email": "nishi@gmail.com",
+      "date": "2023-06-07"
     }
   ]
 }
