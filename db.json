@@ -29,36 +29,6 @@
       "desig": "Asst.Professor",
       "subject": "IOT",
       "address": "New Court Road"
-    },
-    {
-      "id": 4,
-      "name": "Veena Patil",
-      "dob": "2023-06-02",
-      "mnumber": 25563328596,
-      "email": "veena@gmail.com",
-      "desig": "nnnn",
-      "subject": "AIML",
-      "address": "bijapur"
-    },
-    {
-      "id": 5,
-      "name": "Ravi hosur",
-      "dob": "2023-06-08",
-      "mnumber": 7412589633,
-      "email": "ravi@gmail.com",
-      "desig": "bbbbb",
-      "subject": "DBMS",
-      "address": "bijapur"
-    },
-    {
-      "id": 6,
-      "name": "Sunandha",
-      "dob": "1977-02-17",
-      "mnumber": 7657665767,
-      "email": "sunandha@gmail.com",
-      "desig": "Professor",
-      "subject": "DBMS",
-      "address": "ss road"
     }
   ],
   "stud": [
@@ -100,22 +70,11 @@
       "name": "Sujata Kagale",
       "dob": "2001-06-01",
       "course": "ECE",
-      "fname": "pqrs",
+      "fname": "pqr",
       "mname": "abc",
       "snumber": 9888675645,
       "pnumber": 8996544345,
       "usn": "2bl19ec085"
-    },
-    {
-      "id": 5,
-      "name": "Pallavi Patil",
-      "usn": "2bl19cs304",
-      "dob": "2002-04-03",
-      "course": "CSE",
-      "fname": "Hanumanth",
-      "mname": "Lalitha",
-      "snumber": 9888765543,
-      "pnumber": 800900322
     }
   ],
   "fees": [
@@ -151,20 +110,10 @@
     },
     {
       "id": "4",
-      "sname": "Nisarga Jadav",
-      "usn": "IS077",
-      "cno": "7876765454",
-      "email": "jadav@gmail.com",
-      "tfees": "80000",
-      "paidfees": "45000",
-      "duefees": "35000"
-    },
-    {
-      "id": "5",
-      "sname": "Swati Limbitot",
-      "usn": "CS101",
-      "cno": "8990675453",
-      "email": "swati@gmail.com",
+      "sname": "Advik Huchnur",
+      "usn": "IS067",
+      "cno": "9878765654",
+      "email": "huchnur@gmail.com",
       "tfees": "80000",
       "paidfees": "80000",
       "duefees": "0"
@@ -209,7 +158,6 @@
     },
     {
       "id": 4,
-<<<<<<< HEAD
       "name": "Nishita",
       "dob": "2023-06-09",
       "gen": "Female",
@@ -219,17 +167,6 @@
       "no": 9898767654,
       "email": "nishi@gmail.com",
       "date": "2023-06-07"
-=======
-      "name": "Sangeeta G",
-      "dob": "2001-04-16",
-      "gen": "Female",
-      "sper": "95%",
-      "pper": "89%",
-      "cname": "CSE",
-      "no": 7412589632,
-      "email": "gaddisangeeta@gmaul.com",
-      "date": "2023-06-28"
->>>>>>> 10a5d4de434d37074013183c596588c1ca7639e9
     }
   ]
 }
