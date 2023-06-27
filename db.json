@@ -107,16 +107,6 @@
       "tfees": "80000",
       "paidfees": "60000",
       "duefees": "20000"
-    },
-    {
-      "id": "4",
-      "sname": "Advik Huchnur",
-      "usn": "IS067",
-      "cno": "9878765654",
-      "email": "huchnur@gmail.com",
-      "tfees": "80000",
-      "paidfees": "80000",
-      "duefees": "0"
     }
   ],
   "admission": [
