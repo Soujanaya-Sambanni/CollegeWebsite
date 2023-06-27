@@ -186,6 +186,18 @@
       "no": 8967454454,
       "email": "s@gmail.com",
       "date": "2019-06-12"
+    },
+    {
+      "id": 4,
+      "name": "Sangeeta G",
+      "dob": "2001-04-16",
+      "gen": "Female",
+      "sper": "95%",
+      "pper": "89%",
+      "cname": "CSE",
+      "no": 7412589632,
+      "email": "gaddisangeeta@gmaul.com",
+      "date": "2023-06-28"
     }
   ]
 }
