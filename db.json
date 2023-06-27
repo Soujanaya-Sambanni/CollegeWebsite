@@ -90,11 +90,22 @@
       "name": "Sujata Kagale",
       "dob": "2001-06-01",
       "course": "ECE",
-      "fname": "pqr",
+      "fname": "pqrs",
       "mname": "abc",
       "snumber": 9888675645,
       "pnumber": 8996544345,
       "usn": "2bl19ec085"
+    },
+    {
+      "id": 5,
+      "name": "Pallavi Patil",
+      "usn": "2bl19cs304",
+      "dob": "2002-04-03",
+      "course": "CSE",
+      "fname": "Hanumanth",
+      "mname": "Lalitha",
+      "snumber": 9888765543,
+      "pnumber": 800900322
     }
   ],
   "fees": [
