@@ -49,6 +49,16 @@
       "desig": "bbbbb",
       "subject": "DBMS",
       "address": "bijapur"
+    },
+    {
+      "id": 6,
+      "name": "Sunandha",
+      "dob": "1977-02-17",
+      "mnumber": 7657665767,
+      "email": "sunandha@gmail.com",
+      "desig": "Professor",
+      "subject": "DBMS",
+      "address": "ss road"
     }
   ],
   "stud": [
