@@ -29,6 +29,26 @@
       "desig": "Asst.Professor",
       "subject": "IOT",
       "address": "New Court Road"
+    },
+    {
+      "id": 4,
+      "name": "Veena Patil",
+      "dob": "2023-06-02",
+      "mnumber": 25563328596,
+      "email": "veena@gmail.com",
+      "desig": "nnnn",
+      "subject": "AIML",
+      "address": "bijapur"
+    },
+    {
+      "id": 5,
+      "name": "Ravi hosur",
+      "dob": "2023-06-08",
+      "mnumber": 7412589633,
+      "email": "ravi@gmail.com",
+      "desig": "bbbbb",
+      "subject": "DBMS",
+      "address": "bijapur"
     }
   ],
   "stud": [
