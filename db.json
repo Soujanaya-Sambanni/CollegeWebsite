@@ -133,6 +133,18 @@
       "no": 2589631245,
       "email": "sangwwt@gmail.com",
       "date": "2023-07-06"
+    },
+    {
+      "id": 3,
+      "name": "Keerti",
+      "dob": "2001-06-20",
+      "gen": "Female",
+      "sper": "88%",
+      "pper": "90%",
+      "cname": "CIVIL",
+      "no": 8967454454,
+      "email": "s@gmail.com",
+      "date": "2019-06-12"
     }
   ]
 }
